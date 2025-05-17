@@ -4,3 +4,5 @@ This repo is like a scratchpad for git commands. You can use it to test out diff
 
 Commit author should be personal but push may not work.
 I'm surprised that I can push to this repo.
+
+Test 001
