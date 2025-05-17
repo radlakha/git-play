@@ -15,3 +15,5 @@ Test 004 logged out from github browser account
 
 Test 005 Turned on one more flag under Branch Protection Rules
 
+Test 006 Laptop rebooted
+
