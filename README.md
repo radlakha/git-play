@@ -9,3 +9,4 @@ Test 001
 Test 002
 
 Test 003 logged out and cloned again from another account
+Test 004 logged out from github browser account
