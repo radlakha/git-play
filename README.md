@@ -17,3 +17,5 @@ Test 005 Turned on one more flag under Branch Protection Rules
 
 Test 006 Laptop rebooted
 
+Test 007 Switched to rulesets
+
