@@ -19,3 +19,5 @@ Test 006 Laptop rebooted
 
 Test 007 Switched to rulesets
 
+Test 008 Rulesets worked with Bypass for adming. Confirm by switching to work account
+
