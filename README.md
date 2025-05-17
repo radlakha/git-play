@@ -7,3 +7,5 @@ I'm surprised that I can push to this repo.
 
 Test 001
 Test 002
+
+Test 003 logged out and cloned again from another account
