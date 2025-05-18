@@ -40,5 +40,36 @@ Bypass setting changed to `Always Allow` for Repo Admin role.
 
 Quit the terminal in VS Code and also the terminal app. 
 
+Test 011
 It all seems to point to cached credentials.   
 Running `GIT_TRACE=1 git push origin main`   
+  
+Above test showed that the push was allowed because of the cached credentials.    
+To further confirm this I am creating a new user on github and trying to push to the repo using this new user.  
+
+Step-by-Step  
+Get or Create a Personal Access Token for the Test Account:  
+Log in to the secondary GitHub account in a browser (use incognito mode to avoid conflicts with your primary account).  
+Go to Settings > Developer settings > Personal access tokens > Tokens (classic).  
+Click Generate new token:  
+Name: “Test Push Token”  
+Expiration: Set to 1 day (or shortest available).  
+Scopes: Select repo (full control of private/public repositories).  
+Generate the token and copy it (e.g., ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx).  
+Note the username of the secondary account (e.g., testuser).  
+Modify the Remote URL to Include Credentials:  
+In your local repository, set the remote URL to include the username and token:  
+bash  
+
+Copy  
+git remote set-url origin https://testuser:ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com/owner/repo.git  
+Replace testuser with the secondary account’s username.  
+Replace ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx with the token.  
+Replace owner/repo with your repository’s owner and name (e.g., yourusername/yourrepo).  
+Test the Push.  
+
+PASSED!  
+So credentials helper and or cached credentials are the issue.
+
+Test user was added as a collaborator. And now it  is prompted to create a pull request.  
+After creating a pull request, the test user was able to merge the pull request.
