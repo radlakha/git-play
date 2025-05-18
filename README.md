@@ -26,4 +26,14 @@ Test 009 Bypass allowed other user too. Keep the bypass on and log out from the 
 Test is that owner should be able to push to main. Anyone else should fail.  
 Then test that non-owner can push to a new branch and raise a PR that can only be merged by owner.
 
-Test 010 Bypass setting changed to `Allow for pull requests only`
+Test 010 Bypass setting changed to `Allow for pull requests only`  
+This restricts everyone, including the owner, from pushing to main!  
+
+On my public repo, I find that everyone can push to main. I tested this by logging out using `gh auth logout` Even though I have not added any collaborators and the screen says:  
+`Direct access  
+0 collaborators have access to this repository. Only you can contribute to this repository.`  
+If I create a ruleset preventing push directly and require a pull request, then even I logged in is required to create a pull request, which is frustrating. Adding Bypass for Repo admin role then allows all, even those not logged in, to push. What am I doing wrong? 
+
+Logged out `gh auth logout`
+Cleared git cache with `git credential-cache exit` and `git credential-cache clear`  
+Then logged in again using `gh auth login`  
