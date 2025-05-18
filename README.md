@@ -39,3 +39,6 @@ Cleared git cache with `git credential-cache exit` and `git credential-cache cle
 Bypass setting changed to `Always Allow` for Repo Admin role.  
 
 Quit the terminal in VS Code and also the terminal app. 
+
+It all seems to point to cached credentials.   
+Running `GIT_TRACE=1 git push origin main`   
