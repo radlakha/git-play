@@ -66,4 +66,10 @@ git remote set-url origin https://testuser:ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Replace testuser with the secondary account’s username.  
 Replace ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx with the token.  
 Replace owner/repo with your repository’s owner and name (e.g., yourusername/yourrepo).  
-Test the Push.
+Test the Push.  
+
+PASSED!  
+So credentials helper and or cached credentials are the issue.
+
+Test user was added as a collaborator. And now it  is prompted to create a pull request.  
+After creating a pull request, the test user was able to merge the pull request.
