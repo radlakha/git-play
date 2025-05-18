@@ -78,3 +78,5 @@ Test 012 - Restrict other users from merging the pull request.
 Created a ruleset to restrict merging of pull requests.  Only allow the owner to merge.  
 
 Adjusted the ruleset to relax other restrictions apart from Require pull request reviews before merging with all but Copilot review options checked.  
+
+Test 013 - Back to being owner and pusing to main.  
