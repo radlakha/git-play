@@ -25,3 +25,5 @@ Test 009 Bypass allowed other user too. Keep the bypass on and log out from the 
 
 Test is that owner should be able to push to main. Anyone else should fail.  
 Then test that non-owner can push to a new branch and raise a PR that can only be merged by owner.
+
+Test 010 Bypass setting changed to `Allow for pull requests only`
