@@ -73,3 +73,6 @@ So credentials helper and or cached credentials are the issue.
 
 Test user was added as a collaborator. And now it  is prompted to create a pull request.  
 After creating a pull request, the test user was able to merge the pull request.
+
+Test 012 - Restrict other users from merging the pull request.  
+Created a ruleset to restrict merging of pull requests.  Only allow the owner to merge.  
