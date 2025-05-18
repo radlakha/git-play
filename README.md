@@ -36,4 +36,6 @@ If I create a ruleset preventing push directly and require a pull request, then 
 
 Logged out `gh auth logout`
 Cleared git cache with `git credential-cache exit` and `git credential-cache clear`  
-Then logged in again using `gh auth login`  
+Bypass setting changed to `Always Allow` for Repo Admin role.  
+
+Quit the terminal in VS Code and also the terminal app. 
